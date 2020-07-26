@@ -17,6 +17,9 @@ class _HomeScreenState extends State<HomeScreen> {
         title: Text("Hero Sample2"),
       ),
       body: GridView.count(
+        //flutter how to give height to the childrens of GridView.Builder
+        //https://stackoverflow.com/questions/53612200/flutter-how-to-give-height-to-the-childrens-of-gridview-builder?rq=1
+        childAspectRatio: 4 / 3,
         crossAxisCount: 2,
         children: _buildGridItems(context),
       ),
